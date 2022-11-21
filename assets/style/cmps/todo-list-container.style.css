@@ -1,0 +1,27 @@
+.todo-list-container {
+    overflow-y: auto;
+    padding-inline-start: 10px;
+    margin-inline-end: 10px;
+    margin-block: 10px;
+}
+
+.todo-list-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px var(--clr-2);
+    background-color: #F5F5F5;
+}
+
+.todo-list-container::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.todo-list-container::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px var(--clr-2);
+    background-color: var(--clr-primary);
+}
+
+.todo-list-container p {
+    margin-block: 5px;
+    font-family: 'ProductSans-medium';
+    font-size: larger;
+}

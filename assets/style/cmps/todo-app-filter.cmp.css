@@ -1,0 +1,51 @@
+.todo-app-filter {
+    padding: 10px;
+}
+
+.todo-app-filter form input, 
+.todo-app-filter select {
+    color: var(--clr-2);
+}
+
+.todo-app-filter form input::placeholder {
+    font-size: 1rem;
+    font-family: ProductSans-light;
+}
+
+
+.todo-app-filter p {
+    margin-block: 5px;
+    font-family: 'ProductSans-medium';
+    font-size: larger;
+}
+
+.todo-app-filter form input {
+    background-color: transparent;
+    height: 100%;
+    text-indent: 5px;
+    font-size: 1rem;
+}
+
+.todo-app-filter form {
+    background-color: var(--clr-1);
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . .";
+    height: 39px;
+}
+
+.todo-app-filter select {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    text-align: center;
+}
+
+.todo-app-filter select:hover {
+    cursor: pointer;
+}
+

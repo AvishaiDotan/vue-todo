@@ -1,0 +1,99 @@
+.user-details {
+    grid-area: todo-app-container;
+    margin-block-start: 75px;
+    background-color: var(--clr0);
+    box-shadow: 0.1px 0.1px 3px 0px #909090;
+    width: 500px;
+    margin-inline: auto;
+    height: min-content;
+}
+
+
+.user-details .user-details-header h2 {
+    padding: 35px;
+    font-family: 'ProductSans-medium';
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.user-details .user-details-header button {
+    padding: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    border: 0;
+    padding: 15px;
+    background-color: transparent;
+    color: rgb(161, 161, 161);
+    transition: 0.4s;
+}
+
+.user-details .user-details-header button:hover {
+    color: var(--clr-2);
+    cursor: pointer;
+}
+
+.user-details .user-details-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.user-details .user-details-form {
+    text-align: center;
+}
+
+.user-details .user-details-form div {
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-details .user-details-form input {
+    box-shadow: 0.1px 0.1px 3px 0px #777777;
+}
+
+.user-details .user-details-form input[type="color"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 20px;
+    padding: 0;
+    width: 200px;
+}
+
+.user-details .user-details-form input:focus {
+    border-radius: 0;
+    outline: none;
+}
+
+.user-details .user-details-form input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.user-details .user-details-form input[type="color"]::-webkit-color-swatch {
+    border: 0;
+    border-radius: 0;
+}
+
+.user-details .user-details-form input[type="color"]::-moz-color-swatch,
+.user-details .user-details-form input[type="color"]::-moz-focus-inner {
+    border: 0;
+}
+
+.user-details .user-details-form input[type="color"]::-moz-focus-inner {
+    padding: 0;
+}
+
+.user-details .name-input-container {
+    text-align: center;
+}
+
+.user-details .name-input-container input[type="text"] {
+    height: 20px;
+    width: 200px;
+}

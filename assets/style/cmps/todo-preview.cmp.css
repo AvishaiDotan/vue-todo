@@ -1,0 +1,53 @@
+.todo-preview {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.todo-preview h3,
+.todo-preview .date,
+.todo-preview button,
+.todo-preview a {
+    color: var(--clr-2);
+}
+
+.todo-preview .preview-actions-container {
+    display: flex;
+    gap: 10px;  
+}
+
+.todo-preview .preview-actions-container > * > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(74%) sepia(0%) saturate(2%) hue-rotate(21deg) brightness(89%) contrast(87%);
+}
+
+.todo-preview .preview-actions-container > * > *:hover {
+    cursor: pointer;
+    filter: none;
+}
+
+.todo-preview .preview-actions-container > * > *, 
+.todo-preview .preview-actions-container > * {
+    height: 100%;
+}
+
+.todo-preview .preview-actions-container div {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-preview .preview-actions-container button:hover,
+.todo-preview .preview-actions-container a:hover {
+    text-decoration: line-through;
+}
+
+.todo-preview .preview-actions-container img {
+    height: 12px;
+}
+
+
+
+

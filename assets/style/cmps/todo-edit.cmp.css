@@ -1,0 +1,96 @@
+.todo-edit-container {
+    padding: 10px;
+}
+
+.todo-edit-container p {
+    margin-block: 5px;
+    font-family: 'ProductSans-medium';
+    font-size: larger;
+}
+
+.todo-edit-container .add-todo-container form {
+    background-color: var(--clr-1);
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr 100px 50px;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . .";
+
+}
+
+.todo-edit-container form input, 
+.todo-edit-container form button {
+    background-color: transparent;
+    height: 100%;
+    text-indent: 5px;
+    color: var(--clr0);
+}
+
+.todo-edit-container form button {
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+}
+
+.todo-edit-container form button,
+.todo-edit-container .dropdown-toggle .dropdown-btn,
+.todo-edit-container form input::placeholder,
+.todo-edit-container form input {
+    color: var(--clr-2);
+}
+
+.todo-edit-container form input::placeholder {
+    font-family: ProductSans-light;
+    font-size: 1rem;
+}
+
+.todo-edit-container form button:hover {
+    cursor: pointer;
+}
+
+.todo-edit-container .dropdown-toggle {
+    position: relative;
+}
+
+.todo-edit-container .dropdown-toggle:hover {
+    cursor: pointer;
+}
+
+.todo-edit-container .dropdown-toggle .dropdown-btn {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.todo-edit-container .dropdown-toggle .dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.todo-edit-container .dropdown span {
+    font-size: 0;
+    transition: 0.6s;
+}
+
+.todo-edit-container .dropdown.open span {
+    padding: 5px;
+    font-size: 1rem;
+    background-color: var(--clr-primary);
+    color: var(--clr0);
+    border-block-end: solid 0.1px var(--clr0);
+
+}
+
+.todo-edit-container .dropdown span:hover {
+    background-color: var(--clr-secondary);
+    color: var(--clr-2);
+    cursor: pointer;
+}

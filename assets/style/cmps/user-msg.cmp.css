@@ -1,0 +1,17 @@
+.alert {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0.1px 0.1px 0.1px solid var(--clr-2);
+}
+
+.alert.alert-success {
+    background-color: var(--clr0);
+}
+
+.alert.alert-error {
+    background-color: var(--clr-2);
+    color: var(--clr0);
+}

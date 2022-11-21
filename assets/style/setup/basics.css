@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-family: ProductSans-light;
+    color: var(--clr-2);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--clr-secondary);
+}
+
+button:hover {
+    cursor: pointer;
+}

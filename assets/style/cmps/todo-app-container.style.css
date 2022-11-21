@@ -1,0 +1,17 @@
+.todo-app-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . ."
+        ". todo-app todo-app ."
+        ". todo-app todo-app ."
+        ". . . .";
+    height: calc(100vh - 130px);
+}
+
+.todo-app {
+    grid-area: todo-app;
+}

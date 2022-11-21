@@ -1,0 +1,18 @@
+/* Setup */
+@import './setup/reset.css';
+@import './setup/vars.css';
+@import './setup/typography.css';
+@import './setup/basics.css';
+@import './setup/animate.css';
+@import './cmps/loader.cmp.css';
+
+@import './cmps/main-container.style.css';
+@import './cmps/todo-list-container.style.css';
+@import './cmps/app-header.style.css';
+@import './cmps/user-details.cmp.css';
+@import './cmps/todo-app-container.style.css';
+@import './cmps/todo-app.style.css';
+@import './cmps/todo-edit.cmp.css';
+@import './cmps/todo-app-filter.cmp.css';
+@import './cmps/todo-preview.cmp.css';
+@import './cmps/user-msg.cmp.css';

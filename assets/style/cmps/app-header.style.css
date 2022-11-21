@@ -1,0 +1,51 @@
+.app-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-areas:
+        ". header-logo header-user";
+}
+
+.app-header h1 {
+    grid-area: header-logo;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'ProductSans-bold';
+}
+
+.app-header h1:hover {
+    cursor: pointer;
+}
+
+.app-header .user-container {
+    grid-area: header-user;
+    justify-self: end;
+    padding-inline-end: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.app-header .user-container img {
+    height: 32px;
+    filter: invert(32%) sepia(55%) saturate(2084%) hue-rotate(190deg) brightness(98%) contrast(93%);
+}
+
+
+.app-header {
+    background-color: var(--clr-1);
+}
+
+.app-header .progress-bar {
+    width: 100px;
+    background-color: var(--clr0);
+    border-radius: 2px;
+}
+
+.app-header .progress-bar .progress-bar-fill {
+    background-color: var(--clr-primary);
+}

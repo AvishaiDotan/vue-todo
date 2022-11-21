@@ -1,0 +1,27 @@
+.todo-app {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 95px 95px 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "todo-edit-container"
+        "todo-app-filter"
+        "todo-list";
+    padding-block: 10px;
+    background-color: var(--clr0);
+    box-shadow: 0.1px 0.1px 3px 0px #909090;
+    border-radius: 2px;
+}
+
+.todo-edit-container {
+    grid-area: todo-edit-container;
+}
+
+.todo-app-filter {
+    grid-area: todo-app-filter;
+}
+
+.todo-list {
+    grid-area: todo-list;
+}
